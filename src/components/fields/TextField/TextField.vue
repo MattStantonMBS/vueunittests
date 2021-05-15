@@ -2,6 +2,7 @@
   <v-row>
     <v-col cols="12" md="6">
       <v-text-field
+        :value="value"
         outlined
        />
     </v-col>
@@ -10,6 +11,9 @@
 
 <script>
 export default {
-  name: "TextField"
+  name: "TextField",
+  props: {
+    value: null,
+  }
 }
 </script>
